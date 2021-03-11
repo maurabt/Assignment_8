@@ -1,0 +1,35 @@
+﻿<!--universal layout-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookstore Database</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css" />
+
+</head>
+<body>
+    <div class="bg-dark text-white p-2">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col navbar-brand">BOOKSTORE DATABASE</div>
+                <div class="col-6 text-right">cart:
+                    <vc:cart-summary />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row m-1 p-1">
+        <div id="" class="col-3">
+            <h1>Explore Genres</h1>
+            <vc:navigation-menu />
+        </div>
+        <div class="col-9">
+            @RenderBody()
+        </div>
+    </div>
+</body>
+</html>
